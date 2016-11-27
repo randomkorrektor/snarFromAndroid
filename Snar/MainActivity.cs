@@ -8,7 +8,7 @@ using Android.OS;
 
 namespace Snar
 {
-    [Activity(Label = "Snar", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Snar", MainLauncher = false, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         int count = 1;
