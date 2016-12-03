@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="Host">http://192.168.0.3:3000/</string>  
+    <string name="ApiIsALife">api/System/IsALife</string>  
+  
+
+
+
+
+
+
+
+    <string name="ServerNotFound">Server not found</string>
+  
+  
+  
+  
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">Snar</string>
 </resources>

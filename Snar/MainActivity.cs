@@ -5,6 +5,9 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.Net;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace Snar
 {
@@ -24,7 +27,16 @@ namespace Snar
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.MyButton);
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            button.Click += Button_Click;
+        }
+
+        private void Button_Click(object sender, EventArgs e1)
+        {
+            var builder = new AlertDialog.Builder(this);
+            builder.SetMessage("Hello, World!");
+            builder.SetPositiveButton("OK", (s, e) => { /* do something on OK click */ });
+            builder.SetNegativeButton("Cancel", (s, e) => { /* do something on Cancel click */ });
+            builder.Create().Show();
         }
     }
 }
